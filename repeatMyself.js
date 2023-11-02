@@ -1,6 +1,16 @@
 function repeatMyself(string) {
-    //write your code here
+
+    //return `${string}!${string}!!${string}!!!${string}!!!!${string}!!!!!`
+
+    let result = "";
+    for (let i = 1; i <= 5; i++) {
+      result += string;
+      result += "!".repeat(i);
+    }
+    return result;
+
 
 }
 
+console.log(repeatMyself("hello"))
 module.exports = repeatMyself
